@@ -1,8 +1,11 @@
-html {
-    background-color: whitesmoke;
+h1 {
+    color: rgb(3, 16, 196);
 }
 
-h1 {
-    color: blue;
+.quote {
+    color: white;
+}
 
+.intro_text {
+    color: rgb(27, 1, 1);
 }
