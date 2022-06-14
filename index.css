@@ -9,3 +9,41 @@ h1 {
 .intro_text {
     color: rgb(27, 1, 1);
 }
+
+#bioimages {
+    height:200px;
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 100px;
+}
+
+#bioimages img {
+    width: auto; 
+    max-height: 100%; 
+}
+
+#navbar {
+    width: 100%;
+    overflow: hidden;
+    color: #fff;
+    background-color: #000;
+    text-align: center;
+}
+
+#navbar > a {
+    text-decoration: none;
+    color: white;
+    padding: 8px 16px;
+    float: left;
+    width: auto;
+    border: none;
+    display: block;
+    outline: 0;
+    width: 20%;
+}
+
+#navbar > a:hover {
+    background-color: blue;
+}
