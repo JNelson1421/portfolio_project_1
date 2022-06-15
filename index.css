@@ -105,9 +105,7 @@ ul {
 }
 
 
-h2,
-h3,
-a {
+h2, h3, a {
 	color: #24082B;
 }
 
@@ -233,20 +231,90 @@ a {
     padding: 0px 5px;
 }
 
+/*@media all and (max-width: 500px) {
+    body {
+        
+    }
+}*/ 
+
+@viewport {
+    width: device-width;
+    zoom: 1.0;
+  }
+
+/*  @media screen and (max-width:320px) {
+    
+  }*/
+
+ /* @media screen and (min-width:320px) and (max-width:640px) {
+     for screens that are at least 320 pixels wide but less than or equal to 640 pixels wide 
+  }*/
 
 
+@media screen and (min-width: 321px) and (max-width: 940px) {
+    body {
+      width: 600px;
+      margin-top: 300px;
+      text-align: center;
+    }
+  }
 
+@media screen and (min-width: 321px) and (max-width: 940px) {
+    #index-media{
+      margin-left: 260px;
+    }
+  }
 
+@media screen and (min-width: 321px) and (max-width: 940px) {
+    #bio-media{
+      margin-left: 260px;
+    }
+  }
 
+  @media screen and (min-width: 321px) and (max-width: 940px) {
+    #bioimages{
+      margin-bottom: 100px;
+    }
+  }
 
+  @media screen and (min-width: 321px) and (max-width: 940px) {
+    #experience{
+      margin-left: 200px;
+    }
+  }
 
+  @media screen and (min-width: 321px) and (max-width: 940px) {
+    #portfolio-container{
+      margin-left: 140px;
+    }
+  }
 
+  @media screen and (min-width: 321px) and (max-width: 940px) {
+    #portfolio-title{
+      margin-left: 330px;
+    }
+  }
 
+  @media screen and (min-width: 321px) and (max-width: 940px) {
+  #portfolio1, #portfolio2, #portfolio3 {
+    float: left;
+    width: 33%;
+    text-align: center;
+    background-color: #130D51;
+    padding: 0px 20px;
+    }
+  }
 
+  @media screen and (min-width: 321px) and (max-width: 940px) {
+    #portfolio-title {
+    background-color: #130D51;
+    width: 30%;
+    margin-left: 290px;
+    padding: 0px 5px;
+    }
+  }
 
-
-
-@media (min-width: 769px) {
+@media (min-width: 740px) {
 	.header,
 	.main-nav {
 		display: flex;
