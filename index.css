@@ -1,13 +1,38 @@
+html {
+    color: white;
+}
 h1 {
-    color: rgb(3, 16, 196);
+    color: rgb(248, 248, 248);
 }
 
 .quote {
     color: white;
+        font-family: 'Indie Flower', serif;
+        font-size: 48px;
+        text-shadow: 4px 4px 4px #aaa;
+        text-align: center;
 }
 
 .intro_text {
-    color: rgb(27, 1, 1);
+    color: rgb(255, 255, 255);
+    font-family: 'Major Mono Display', monospace;
+    font-size: 40px;
+    text-align: center;
+    margin-left: 34px;
+    margin-top: 0px;
+}
+
+h4 {
+    color: rgb(255, 255, 255);
+    font-family: 'Abril Fatface', cursive;
+    font-size: 35px;
+    margin-bottom: 0px;
+    text-align: center;
+}
+
+#spacer {
+    margin-left: 300px;
+    margin-right: 400px;
 }
 
 #bioimages {
@@ -21,29 +46,222 @@ h1 {
 
 #bioimages img {
     width: auto; 
-    max-height: 100%; 
+    max-height: 100%;
+	box-shadow: 0px 0px 9px 7px rgba(13,118,225,0.7);
+	border-radius: 5px;
 }
 
-#navbar {
-    width: 100%;
-    overflow: hidden;
-    color: #fff;
-    background-color: #000;
+#bio-header {
+    color: rgb(255, 255, 255);
+    font-family: 'Abril Fatface', cursive;
+    font-size: 35px;
+    margin-bottom: 0px;
     text-align: center;
 }
 
-#navbar > a {
-    text-decoration: none;
-    color: white;
-    padding: 8px 16px;
-    float: left;
-    width: auto;
-    border: none;
-    display: block;
-    outline: 0;
-    width: 20%;
+.bio-paragraph {
+    color: rgb(255, 255, 255);
+    font-family: 'Abril Fatface', cursive;
+    font-size: 19.5px;
+    margin-bottom: 0px;
+    text-align: center;
+    width: 70%;
+    margin-left: 15%;
+    text-shadow: 1px 1px 2px black;
 }
 
-#navbar > a:hover {
-    background-color: blue;
+#education h3, #work h3, #coding-header h3 {
+    font-family: 'Abril Fatface', cursive;
+    font-size: 25px;
+    margin-bottom: 0px;
+    color: rgb(255, 255, 255);
+}
+
+#education, #work, #coding-header {
+    text-align: center;
+}
+
+#experience {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 100px;
+}
+
+* {
+	box-sizing: border-box;
+}
+body {
+	font-family: 'Montserrat', sans-serif;
+	line-height: 1.6;
+	margin: 0;
+	min-height: 100vh;
+    height: 100%;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+
+h2,
+h3,
+a {
+	color: #24082B;
+}
+
+a {
+	text-decoration: none;
+}
+
+
+
+.logo {
+	margin: 0;
+	font-size: 1.45em;
+}
+
+.main-nav {
+	margin-top: 5px;
+
+}
+.logo a,
+.main-nav a {
+	padding: 10px 15px;
+	text-transform: uppercase;
+	text-align: center;
+	display: block;
+}
+
+.main-nav a {
+	color: #24082B;
+	font-size: .99em;
+}
+
+.main-nav a:hover {
+	color: #FF348D;
+}
+
+
+
+.header {
+	padding-top: .5em;
+	padding-bottom: .5em;
+	border: 1px solid #EB09DB;
+	background-color: #0D76E1;
+	box-shadow: 0px 0px 14px 0px rgba(238, 3, 3, 0.75);
+	border-radius: 5px;
+    position: fixed;
+    top: 0%;
+    width: 100%;
+}
+
+.websitelinks {
+    font: bold 11px Arial;
+    text-decoration: none;
+    background-color: #EEEEEE;
+    color: #333333;
+    padding: 2px 6px 2px 6px;
+    border-top: 1px solid #CCCCCC;
+    border-right: 1px solid #333333;
+    border-bottom: 1px solid #333333;
+    border-left: 1px solid #CCCCCC;
+  }
+
+.colored {
+    font-size: 100px;
+    width: auto; 
+    max-height: 100%;
+}
+
+#coding-icons {
+    height:auto;
+    display: flex;
+    justify-content: space-between;
+    width: 24%;
+    margin-left: 38%;
+    margin-top: 100px;
+}
+
+#coding-icons i {
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.25), rgba(19, 19, 19, 0.25));   
+}
+
+#social-media-links {
+    display: flex;
+    justify-content: space-around;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    background-color: #0D76E1;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    position: fixed;
+    bottom: 0%;
+    box-shadow: 0px 0px 14px 0px rgba(238, 3, 3, 0.75);
+}
+
+#portfolio-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+#portfolio1, #portfolio2, #portfolio3 {
+    width: 20%;
+    text-align: center;
+    background-color: #130D51;
+    padding: 0px 20px;
+}
+
+#portfolio-container h3 {
+    color: white;
+}
+
+.portfolio-img {
+    width: 100%;
+    height: auto;
+}
+
+#portfolio-title {
+    margin-top: 200px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    background-color: #130D51;
+    width: 14%;
+    margin-left: 43%;
+    padding: 0px 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 769px) {
+	.header,
+	.main-nav {
+		display: flex;
+	}
+	.header {
+		flex-direction: column;
+		align-items: center;
+	}
+
+}
+
+@media (min-width: 1025px) {
+	.header {
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
 }
