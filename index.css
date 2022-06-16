@@ -35,22 +35,6 @@ h4 {
     margin-right: 400px;
 }
 
-#bioimages {
-    height:200px;
-    display: flex;
-    justify-content: space-between;
-    width: 80%;
-    margin-left: 10%;
-    margin-top: 100px;
-}
-
-#bioimages img {
-    width: auto; 
-    max-height: 100%;
-	box-shadow: 0px 0px 9px 7px rgba(13,118,225,0.7);
-	border-radius: 5px;
-}
-
 #bio-header {
     color: rgb(255, 255, 255);
     font-family: 'Abril Fatface', cursive;
@@ -81,12 +65,6 @@ h4 {
     text-align: center;
 }
 
-#experience {
-    display: flex;
-    justify-content: space-evenly;
-    margin-top: 100px;
-}
-
 * {
 	box-sizing: border-box;
 }
@@ -113,8 +91,6 @@ a {
 	text-decoration: none;
 }
 
-
-
 .logo {
 	margin: 0;
 	font-size: 1.45em;
@@ -124,8 +100,7 @@ a {
 	margin-top: 5px;
 
 }
-.logo a,
-.main-nav a {
+.logo a, .main-nav a {
 	padding: 10px 15px;
 	text-transform: uppercase;
 	text-align: center;
@@ -141,8 +116,6 @@ a {
 	color: #FF348D;
 }
 
-
-
 .header {
 	padding-top: .5em;
 	padding-bottom: .5em;
@@ -156,30 +129,26 @@ a {
 }
 
 .websitelinks {
-    font: bold 11px Arial;
-    text-decoration: none;
-    background-color: #EEEEEE;
-    color: #333333;
-    padding: 2px 6px 2px 6px;
-    border-top: 1px solid #CCCCCC;
-    border-right: 1px solid #333333;
-    border-bottom: 1px solid #333333;
-    border-left: 1px solid #CCCCCC;
+    width: 400px;
+    height: 80px;
+    border-radius: 5px;
+    background-color: #0D76E1;
+    margin-bottom: 15px;
+    text-align: center;
+    font-size: 30px;
+    border: none;
+    box-shadow: 0px 0px 16px -6px rgb(0 0 0 / 50%);
+    color: #fff;
+    letter-spacing: 1px;
+    outline: none;
+    cursor: pointer;
+    padding: 10px;
   }
 
 .colored {
     font-size: 100px;
     width: auto; 
     max-height: 100%;
-}
-
-#coding-icons {
-    height:auto;
-    display: flex;
-    justify-content: space-between;
-    width: 24%;
-    margin-left: 38%;
-    margin-top: 100px;
 }
 
 #coding-icons i {
@@ -200,16 +169,11 @@ a {
     box-shadow: 0px 0px 14px 0px rgba(238, 3, 3, 0.75);
 }
 
-#portfolio-container {
-    display: flex;
-    justify-content: space-around;
-}
-
 #portfolio1, #portfolio2, #portfolio3 {
     width: 20%;
     text-align: center;
     background-color: #130D51;
-    padding: 0px 20px;
+    padding: 20px 20px;
 }
 
 #portfolio-container h3 {
@@ -231,105 +195,242 @@ a {
     padding: 0px 5px;
 }
 
-/*@media all and (max-width: 500px) {
-    body {
-        
-    }
-}*/ 
-
 @viewport {
     width: device-width;
     zoom: 1.0;
   }
 
-/*  @media screen and (max-width:320px) {
-    
-  }*/
-
- /* @media screen and (min-width:320px) and (max-width:640px) {
-     for screens that are at least 320 pixels wide but less than or equal to 640 pixels wide 
-  }*/
-
-
-@media screen and (min-width: 321px) and (max-width: 940px) {
+@media screen and (min-width: 321px) and (max-width: 740px) {
     body {
-      width: 600px;
       margin-top: 300px;
       text-align: center;
     }
-  }
-
-@media screen and (min-width: 321px) and (max-width: 940px) {
     #index-media{
-      margin-left: 260px;
+      margin-left: 5%;
+      margin-top: 100px;
+      width: 90%;
+      margin-bottom: 50px;
     }
-  }
 
-@media screen and (min-width: 321px) and (max-width: 940px) {
-    #bio-media{
-      margin-left: 260px;
+    #bioimages {
+        height:200px;
+        width: 80%;
+        margin-left: 10%;
+        margin-top: 100px;
+        margin-bottom: 480px;
     }
-  }
-
-  @media screen and (min-width: 321px) and (max-width: 940px) {
-    #bioimages{
+    
+    #bioimages img {
+        width: auto; 
+        max-height: 100%;
+        box-shadow: 0px 0px 9px 7px rgba(13,118,225,0.7);
+        border-radius: 5px;
+    }
+    #bio-media {
+        text-shadow: 1px 1px 2px black;
+    }
+  
+    #portfolio-container{
       margin-bottom: 100px;
     }
-  }
-
-  @media screen and (min-width: 321px) and (max-width: 940px) {
-    #experience{
-      margin-left: 200px;
-    }
-  }
-
-  @media screen and (min-width: 321px) and (max-width: 940px) {
-    #portfolio-container{
-      margin-left: 140px;
-    }
-  }
-
-  @media screen and (min-width: 321px) and (max-width: 940px) {
+  
     #portfolio-title{
       margin-left: 330px;
     }
-  }
 
-  @media screen and (min-width: 321px) and (max-width: 940px) {
   #portfolio1, #portfolio2, #portfolio3 {
-    float: left;
-    width: 33%;
+    width: 80%;
     text-align: center;
     background-color: #130D51;
-    padding: 0px 20px;
+    padding: 20px 20px;
+    margin-left: 10%;
     }
-  }
-
-  @media screen and (min-width: 321px) and (max-width: 940px) {
+  
     #portfolio-title {
     background-color: #130D51;
     width: 30%;
-    margin-left: 290px;
+    margin-left: 35%;
     padding: 0px 5px;
+    }
+
+    #experience {
+        margin-top: 100px;
+    }
+
+    #education {
+        width: 90%;
+        margin-left: 5%;
+    }
+
+    #work {
+        width: 90%;
+        margin-left: 5%;
+    }
+    #coding-icons {
+        margin-top: 30px;
     }
   }
 
-@media (min-width: 740px) {
-	.header,
-	.main-nav {
+/*medium size*/
+@media (min-width: 740px) and (max-width: 1025px) {
+	.header, .main-nav {
 		display: flex;
 	}
 	.header {
 		flex-direction: column;
 		align-items: center;
 	}
+    #portfolio-container {
+        display: flex;
+        justify-content: space-around;
+    }
+    #portfolio1, #portfolio2, #portfolio3 {
+        width: 25%;
+        text-align: center;
+        background-color: #130D51;
+        padding: 20px 20px;
+    }
+    #portfolio-title {
+        background-color: #130D51;
+        width: 30%;
+        margin-left: 35%;
+        padding: 0px 5px;
+    }
+    #coding-icons {
+        height: auto;
+        display: flex;
+        justify-content: space-between;
+        width: 20%;
+        margin-left: 33%;
+        margin-top: 100px;
+    }
+    #index-media{
+        margin-left: 5%;
+        margin-top: 150px;
+        width: 90%;
+        margin-bottom: 50px;
+      }
+      #bioimages {
+        height: 150px;
+        width: 80%;
+        display: flex;
+        justify-content: space-between;
+        margin-left: 10%;
+        margin-top: 100px;
+        margin-bottom: 500px;
+    }
+    
+    #bioimages img {
+        width: auto; 
+        max-height: 100%;
+        box-shadow: 0px 0px 9px 7px rgba(13,118,225,0.7);
+        border-radius: 5px;
+    }
+    #bio-media {
+        text-shadow: 1px 1px 2px black;
+        margin-top: 150px;
+    }
+    #coding-icons {
+        height:auto;
+        display: flex;
+        justify-content: space-around;
+        width: 24%;
+        margin-left: 38%;
+        margin-top: 30px;
+    }
+
+    #experience {
+        margin-top: 150px;
+    }
+
+    #education {
+        width: 90%;
+        margin-left: 5%;
+    }
+
+    #work {
+        width: 90%;
+        margin-left: 5%;
+    }
+
+    .websitelinks {
+        font-size: 12px;
+    }
 
 }
-
+/* large size */
 @media (min-width: 1025px) {
 	.header {
 		flex-direction: row;
 		justify-content: space-between;
 	}
+    .header, .main-nav {
+		display: flex;
+	}
+    #portfolio-container {
+        display: flex;
+        justify-content: space-around;
+    }
+    #portfolio1, #portfolio2, #portfolio3 {
+        width: 30%;
+        text-align: center;
+        background-color: #130D51;
+        padding: 20px 20px;
+    }
+    #index-media{
+        margin-left: 5%;
+        margin-top: 100px;
+        width: 90%;
+        margin-bottom: 50px;
+        text-shadow: 4px 4px 4px rgb(0, 0, 0);
+      }
+      #bioimages {
+        height:200px;
+        display: flex;
+        justify-content: space-between;
+        width: 80%;
+        margin-left: 10%;
+        margin-top: 100px;
+    }
+    
+    #bioimages img {
+        width: auto; 
+        max-height: 100%;
+        box-shadow: 0px 0px 9px 7px rgba(13,118,225,0.7);
+        border-radius: 5px;
+    }
+    #bio-media {
+        text-shadow: 1px 1px 2px black;
+        margin-top: 150px;
+    }
+
+    #coding-icons {
+        height:auto;
+        display: flex;
+        justify-content: space-between;
+        width: 24%;
+        margin-left: 38%;
+        margin-top: 50px;
+    }
+
+    #experience {
+        margin-top: 100px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #education {
+        width: 90%;
+        margin-left: 5%;
+    }
+
+    #work {
+        width: 90%;
+        margin-left: 5%;
+    }
+
+    .websitelinks {
+        font-size: 22px;
+    }
 
 }
